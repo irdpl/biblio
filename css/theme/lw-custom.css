@@ -232,7 +232,7 @@ h2.em-7 {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #DD58FF;
+  color: #E250F2; /*#DD58FF;*/
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
