@@ -1,21 +1,23 @@
 ## Dependencies
 
-Themes are written using Sass to keep things modular and reduce the need for repeated selectors across files. Make sure that you have the reveal.js development environment including the Grunt dependencies installed before proceding: https://github.com/hakimel/reveal.js#full-setup
+## Zależności
+
+Motywy są napisane przy użyciu Sass, aby zachować modularność i zredukować potrzebę powtarzania selektorów w różnych plikach. Upewnij się, że masz zainstalowane środowisko programistyczne reveal.js zanim przejdziesz dalej: https://revealjs.com/installation/#full-setup
 
 ## Creating a Theme
 
-To create your own theme, start by duplicating a ```.scss``` file in [/css/theme/source](https://github.com/hakimel/reveal.js/blob/master/css/theme/source). It will be automatically compiled by Grunt from Sass to CSS (see the [Gruntfile](https://github.com/hakimel/reveal.js/blob/master/Gruntfile.js)) when you run `grunt css-themes`.
+Aby stworzyć własny motyw, zacznij od zduplikowania pliku ```.scss``` w [/css/theme/source](https://github.com/hakimel/reveal.js/blob/master/css/theme/source). Zostanie on automatycznie skompilowany z Sass do CSS (zobacz [gulpfile](https://github.com/hakimel/reveal.js/blob/master/gulpfile.js)) gdy uruchomisz `npm run build -- css-themes`.
 
-Each theme file does four things in the following order:
+Każdy plik tematyczny wykonuje cztery rzeczy w następującej kolejności:
 
-1. **Include [/css/theme/template/mixins.scss](https://github.com/hakimel/reveal.js/blob/master/css/theme/template/mixins.scss)**
-Shared utility functions.
+1. **Włącza [/css/theme/template/mixins.scss](https://github.com/hakimel/reveal.js/blob/master/css/theme/template/mixins.scss)**
+Wspólne funkcje użytkowe.
 
-2. **Include [/css/theme/template/settings.scss](https://github.com/hakimel/reveal.js/blob/master/css/theme/template/settings.scss)**
-Declares a set of custom variables that the template file (step 4) expects. Can be overridden in step 3.
+2. **Włącza [/css/theme/template/settings.scss](https://github.com/hakimel/reveal.js/blob/master/css/theme/template/settings.scss)**
+Deklaruje zestaw niestandardowych zmiennych, których oczekuje plik szablonu (krok 4). Można je nadpisać w kroku 3.
 
-3. **Override**
-This is where you override the default theme. Either by specifying variables (see [settings.scss](https://github.com/hakimel/reveal.js/blob/master/css/theme/template/settings.scss) for reference) or by adding any selectors and styles you please.
+3. **Nadpisanie**
+To miejsce, w którym zastępujesz domyślny motyw. Albo przez określenie zmiennych (zobacz [settings.scss](https://github.com/hakimel/reveal.js/blob/master/css/theme/template/settings.scss) for reference) lub dodając dowolne selektory i style, które chcesz.
 
-4. **Include [/css/theme/template/theme.scss](https://github.com/hakimel/reveal.js/blob/master/css/theme/template/theme.scss)**
-The template theme file which will generate final CSS output based on the currently defined variables.
+4. **Włącza [/css/theme/template/theme.scss](https://github.com/hakimel/reveal.js/blob/master/css/theme/template/theme.scss)**
+Plik motywu szablonu, który wygeneruje ostateczne wyjście CSS w oparciu o aktualnie zdefiniowane zmienne.
