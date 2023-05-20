@@ -9,7 +9,7 @@ Z biblioteki możesz korzystać bezpośrednio pod adresem https://biblio.irdpl.p
 # Współpraca
 
 - Widzisz błąd - zgłoś za pomocą  [New issues](https://github.com/irdpl/biblio/issues/new)
-- Masz propozycję wzbogacenia Biblioteki, skorzystaj z [New PullRequest](https://github.com/irdpl/biblio/compare)
+- Masz propozycję wzbogacenia Biblioteki, skorzystaj z [New Pull Request](https://github.com/irdpl/biblio/compare)
 
 albo
 
